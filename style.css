@@ -295,6 +295,32 @@ nav {
   border-color: var(--teal-deep) !important;
 }
 
+.nav-portal {
+  background: transparent !important;
+  border: 1px solid rgba(255,255,255,0.3);
+  padding: 0.6rem 1.4rem;
+  border-radius: var(--radius-sm);
+  color: var(--white) !important;
+  transition: all var(--transition) !important;
+}
+
+.nav-portal:hover {
+  background: rgba(255,255,255,0.1) !important;
+  border-color: rgba(255,255,255,0.5) !important;
+}
+
+#header.scrolled .nav-portal {
+  border-color: var(--border);
+  color: var(--ink-mid) !important;
+}
+
+#header.scrolled .nav-portal:hover {
+  background: var(--teal-pale) !important;
+  color: var(--teal) !important;
+  border-color: var(--teal-light);
+}
+
+
 /* Mobile toggle */
 .nav-mobile-toggle {
   display: none;
@@ -728,6 +754,109 @@ nav {
 .about-phone:hover { color: var(--teal-deep); }
 
 /* ----------------------------------------
+   Home Training
+---------------------------------------- */
+.section-home-training {
+  padding: 7rem 0;
+  background: var(--warm-white);
+}
+
+.home-training-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6rem;
+  align-items: start;
+}
+
+.home-training-content h2 {
+  margin-bottom: 1.5rem;
+}
+
+.home-training-content p {
+  color: var(--ink-mid);
+  margin-bottom: 1.2rem;
+}
+
+.home-training-benefits {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin: 2.5rem 0;
+  padding: 2rem;
+  background: var(--teal-pale);
+  border-radius: var(--radius);
+  border-left: 3px solid var(--pink);
+}
+
+.benefit-item {
+  display: grid;
+  grid-template-columns: 30px 1fr;
+  gap: 1rem;
+  align-items: start;
+}
+
+.benefit-icon {
+  color: var(--pink);
+  font-size: 0.85rem;
+  padding-top: 0.2rem;
+}
+
+.benefit-item strong {
+  display: block;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--ink);
+  margin-bottom: 0.3rem;
+}
+
+.benefit-item p {
+  font-size: 0.88rem;
+  color: var(--ink-mid);
+  margin-bottom: 0;
+  line-height: 1.6;
+}
+
+.home-training-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.training-step {
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  gap: 1.5rem;
+  padding: 2rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.training-step:first-child {
+  padding-top: 0;
+}
+
+.training-step:last-child {
+  border-bottom: none;
+}
+
+.training-step-number {
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  color: var(--teal-light);
+  line-height: 1;
+  padding-top: 0.2rem;
+}
+
+.training-step-content h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.training-step-content p {
+  color: var(--ink-mid);
+  font-size: 0.95rem;
+}
+
+/* ----------------------------------------
    Services
 ---------------------------------------- */
 .conditions-grid {
@@ -1133,6 +1262,7 @@ footer {
   .hero-content { margin: 0; max-width: 100%; }
   .hero-visual { display: none; }
   .intro-grid { grid-template-columns: 1fr; gap: 3rem; }
+  .home-training-grid { grid-template-columns: 1fr; gap: 3rem; }
   .about-grid { grid-template-columns: 1fr; gap: 3rem; }
   .about-image-frame { aspect-ratio: 4/3; max-width: 500px; }
   .approach-cards { grid-template-columns: 1fr; }

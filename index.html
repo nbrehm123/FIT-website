@@ -454,7 +454,7 @@
     document.querySelectorAll('.mobile-menu a').forEach(link => {
       link.addEventListener('click', () => {
         mobileMenu.classList.remove('open');
-      toggle.classList.remove('active');
+        toggle.classList.remove('active');
       });
     });
 
@@ -467,7 +467,7 @@
       });
     }, { threshold: 0.1 });
 
-    document.querySelectorAll('.step, .approach-card, .testimonial, .condition-tag').forEach(el => {
+    document.querySelectorAll('.step, .approach-card, .testimonial, .condition-tag, .training-step').forEach(el => {
       el.classList.add('reveal');
       observer.observe(el);
     });

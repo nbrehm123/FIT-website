@@ -986,6 +986,11 @@ nav {
 .testimonial:nth-child(2) { transition-delay: 0.1s; }
 .testimonial:nth-child(3) { transition-delay: 0.2s; }
 
+.training-step.revealed {
+  opacity: 1;
+  transform: none;
+}
+
 .testimonial-featured {
   background: rgba(255,255,255,0.1);
   border-color: rgba(255,255,255,0.2);
